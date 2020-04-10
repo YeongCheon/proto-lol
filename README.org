@@ -1,0 +1,5 @@
+#+TITLE: Proto LOL
+#+AUTHOR: YeongCheon Kim
+#+DATE: 2020-04-10 23:00:00 +0900
+
+[[https://developer.riotgames.com/][riot games API]]를 대상으로 연습삼아 작성해보는 [[https://developers.google.com/protocol-buffers][protobuffer(v3)]] 프로젝트입니다.
