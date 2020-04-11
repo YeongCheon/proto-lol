@@ -1,0 +1,17 @@
+syntax = "proto3";
+package protoLol;
+
+import "google/api/annotations.proto";
+import "SummonerDTO.proto";
+
+message SummonerRequest {
+  string summonerName = 1;
+}
+
+service SummonerService {
+  rpc GetSummonerDto (SummonerRequest) returns (SummonerDTO) {
+	option (google.api.http) = {
+		get: "/lol/summoner/v4/summoners/by-name/{summonerName}"
+	};
+  }
+}

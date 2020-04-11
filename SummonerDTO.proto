@@ -1,4 +1,7 @@
-message SummonetDTO {
+syntax = "proto3";
+package protoLol;
+
+message SummonerDTO {
   string accountId = 1;
   int32 profileIconId = 2;
   int64 revisionDate = 3; // Date summoner was last modified specified as epoch milliseconds
