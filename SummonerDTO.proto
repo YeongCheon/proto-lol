@@ -1,0 +1,9 @@
+message SummonetDTO {
+  string accountId = 1;
+  int32 profileIconId = 2;
+  int64 revisionDate = 3; // Date summoner was last modified specified as epoch milliseconds
+  string name = 4;
+  string id = 5;
+  string puuid = 6;
+  int64 summonetLevel = 7;
+}
