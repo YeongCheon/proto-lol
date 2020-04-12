@@ -1,6 +1,8 @@
 syntax = "proto3";
 package protoLol;
 
+option go_package = "github.com/yeongcheon/proto-lol";
+
 message SummonerDTO {
   string accountId = 1;
   int32 profileIconId = 2;
