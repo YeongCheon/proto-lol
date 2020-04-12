@@ -1,6 +1,8 @@
 syntax = "proto3";
 package protoLol;
 
+option go_package = "github.com/yeongcheon/proto-lol";
+
 import "google/api/annotations.proto";
 import "SummonerDTO.proto";
 
@@ -10,8 +12,9 @@ message SummonerRequest {
 
 service SummonerService {
   rpc GetSummonerDto (SummonerRequest) returns (SummonerDTO) {
-	option (google.api.http) = {
-		get: "/lol/summoner/v4/summoners/by-name/{summonerName}"
-	};
+	option (google.api.http) =
+	  {
+	   get: "/lol/summoner/v4/summoners/by-name/{summonerName}"
+	  };
   }
 }
